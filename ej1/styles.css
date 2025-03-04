@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.discografia {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.discografia img {
+    width: 100%;
+
+}
+
+table, td {
+    border: 3px solid red;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: #ffc4c4;
+
+}
+
+.cancion-seleccionada {
+    color: red;
+    background-color: yellow;
+    text-shadow: black 1.5px 1.3px
+
+}
+
+
+tr td:nth-child(1) {
+    background-color: #ea5ec0;
+
+}
