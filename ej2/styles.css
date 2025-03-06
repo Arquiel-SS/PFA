@@ -160,7 +160,7 @@ nav ul li:nth-child(2) a {
 }
 
 .parallax-container {
-    background-image: url("/img/bring_me_the_horizon.jpg");
+    background-image: url("img/bring_me_the_horizon.jpg");
 
     min-height: 350px;
 
