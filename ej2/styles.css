@@ -6,6 +6,27 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cfcfcf;
+
+}
+
 header nav {
     background: black;
     display: flex;
@@ -197,7 +218,7 @@ nav ul li:nth-child(2) a {
 .barra-opciones {
     display: flex;
     padding: 30px;
-    width: 500px;
+    width: 300px;
     justify-content: space-around;
     align-items: center;
 
@@ -228,7 +249,7 @@ nav ul li:nth-child(2) a {
 
 }
 
-.barra-opciones button {
+.barra-opciones .follow {
     height: 30px;
     border-radius: 25px;
     width: 80px;
@@ -238,11 +259,155 @@ nav ul li:nth-child(2) a {
 
 }
 
-.barra-opciones button:hover {
+.barra-opciones .follow:hover {
     transform: scale(1.02, 1.02);
     border: 2px white solid;
     transition: 0.3s ease-in-out;
 
+}
+
+.barra-opciones .more {
+    display: flex;
+    font-size: 1.3em;
+    height: 45px;
+    border-radius: 25px;
+    background: transparent;
+    border: none;
+    padding-bottom: 3px;
+
+}
+
+.more {
+    position: relative;
+    background: none; /* Elimina estilos por defecto */
+    border: none;
+    cursor: pointer;
+}
+
+.menu-invisible {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    top: 100%; /* Coloca el menú justo debajo */
+    left: 0;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.more:hover .menu-invisible {
+    visibility: visible;
+
+}
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: rgb(34, 223, 34);
+    border-color: rgb(34, 223, 34);
+
+}
+
+
+input[type="checkbox"]::after {
+    content: "✔";
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+
+input[type="checkbox"]:checked::after {
+    opacity: 1;
+
+}
+
+/* Efecto hover */
+input[type="checkbox"]:hover {
+    transform: scale(1.15, 1.15);
+    transition: 0.2s ease-in-out;
+
+}
+
+h2 {
+    margin-left: 10px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    padding: 10px 15px;
+    text-align: left;
+
+}
+
+td:nth-child(1) { /* Número */
+    width: 5%;
+    text-align: center;
+}
+
+td:nth-child(2) { /* Imagen */
+    width: 10%;
+}
+
+td:nth-child(3) { /* Nombre de la canción */
+    width: 35%;
+}
+
+td:nth-child(4) { /* Reproducciones */
+    width: 20%;
+    text-align: right;
+}
+
+td:nth-child(5) { /* Checkbox */
+    width: 5%;
+    text-align: center;
+}
+
+td:nth-child(6) { /* Duración */
+    width: 10%;
+    text-align: right;
+}
+
+.tabla-imagen img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea separadora entre filas */
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer {
