@@ -128,7 +128,6 @@ nav ul li:nth-child(2) a {
     border: 0.5px solid rgb(94, 94, 94);
     border-radius: 25px;
     height: 33px;
-    padding: 0;
 
 }
 
@@ -138,6 +137,7 @@ nav ul li:nth-child(2) a {
 
 .barra-busqueda .add img {
     height: 30px;
+
 
 }
 
@@ -215,6 +215,11 @@ nav ul li:nth-child(2) a {
 
 }
 
+.main-grupo p {
+    margin: 20px;
+
+}
+
 .barra-opciones {
     display: flex;
     padding: 30px;
@@ -279,7 +284,7 @@ nav ul li:nth-child(2) a {
 
 .more {
     position: relative;
-    background: none; /* Elimina estilos por defecto */
+    background: none;
     border: none;
     cursor: pointer;
 }
@@ -289,11 +294,12 @@ nav ul li:nth-child(2) a {
     flex-direction: column;
     visibility: hidden;
     position: absolute;
-    top: 100%; /* Coloca el menú justo debajo */
+    top: 100%;
     left: 0;
     background: #222;
     padding: 10px;
     border-radius: 5px;
+
 }
 
 .more:hover .menu-invisible {
@@ -343,7 +349,6 @@ input[type="checkbox"]:checked::after {
 
 }
 
-/* Efecto hover */
 input[type="checkbox"]:hover {
     transform: scale(1.15, 1.15);
     transition: 0.2s ease-in-out;
@@ -412,5 +417,51 @@ tbody tr:hover {
 
 footer {
     background-color: black;
+
+}
+
+.footer-grupo {
+    display: flex;
+    width: 40%;
+    height: 40%;
+
+}
+
+.footer-grupo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 50%;
+
+}
+
+.footer-info ul li {
+    list-style: none;
+    margin-left: 5px;
+    margin: 10px;
+
+}
+
+.footer-info ul li a {
+    text-decoration: none;
+    color: #7e7e7e;
+
+}
+
+.footer-iconos img {
+    width: 50px;
+
+}
+
+.footer-iconos img:hover {
+    transform: scale(1.10, 1.10);
+    transition: 0.4s ease-in-out;
 
 }
