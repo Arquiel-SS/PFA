@@ -79,6 +79,13 @@ nav ul li:nth-child(1) {
     border-radius: 25px;
     height: 20px;
     font-size: 1em;
+    font-weight: bold;
+
+}
+
+nav ul li:nth-child(1):hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.2s;
 
 }
 
@@ -97,6 +104,17 @@ nav ul li:nth-child(2) a {
 
 }
 
+nav ul li:nth-child(2):hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.2s;
+
+}
+
+nav ul li:nth-child(2):hover a {
+    color: rgb(204, 204, 204);
+
+}
+
 .barra-busqueda {
     display: flex;
     gap: 6px;
@@ -104,13 +122,7 @@ nav ul li:nth-child(2) a {
 }
 
 .barra-busqueda .home {
-    display: flex;
-    background-color: rgb(33, 33, 33);
-    border: 0.5px solid rgb(94, 94, 94);
-    border-radius: 25px;
-    text-align: center;
-    height: 33px;
-    padding: 0;
+    width: 0px;
 
 }
 
@@ -119,7 +131,7 @@ nav ul li:nth-child(2) a {
 }
 
 .barra-busqueda .home img {
-    height: 30px;
+    width: 100%;
 
 }
 
@@ -146,7 +158,7 @@ nav ul li:nth-child(2) a {
     align-items: center;
     background-color: rgb(33, 33, 33);
     border-radius: 25px;
-    width: 180%;
+    width: 300px;
     height: 30px;
     gap: 10px;
     border: 0.5px solid rgb(94, 94, 94);
@@ -182,11 +194,12 @@ nav ul li:nth-child(2) a {
 
 .parallax-container {
     background-image: url("img/bring_me_the_horizon.jpg");
+    padding: 50px;
 
-    min-height: 350px;
+    min-height: 370px;
 
     background-attachment: fixed;
-    background-position: center;
+    background-position-y: -250px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -194,7 +207,7 @@ nav ul li:nth-child(2) a {
 
 .parallax-container h1 {
     position: absolute;
-    bottom: 8em;
+    bottom: 7em;
     font-size: 4em;
     margin-left: 0.4em;
     
@@ -202,7 +215,7 @@ nav ul li:nth-child(2) a {
 
 .parallax-container p:nth-child(1) {
     position: absolute;
-    bottom: 38em;
+    bottom: 36em;
     font-size: 1em;
     margin-left: 3em;
 
@@ -211,7 +224,7 @@ nav ul li:nth-child(2) a {
 .main-grupo {
     display: absolute;
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 70%,rgb(32, 56, 87) 100%);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 80%,rgb(32, 56, 87) 100%);
 
 }
 
@@ -415,6 +428,85 @@ tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.opciones-discografia {
+    display: flex;
+    width: 470px;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.opciones-discografia li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+    height: 30px;
+
+}
+
+.opciones-discografia li a {
+    font-size: 0.9em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.opciones-discografia li:hover {
+    background-color: white;
+    transform: scale(1.05, 1.05);
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.opciones-discografia li:hover a {
+    color: #000000;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.lista-discografia {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.lista-discografia .discografia-tab {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    border-radius: 6px;
+
+}
+
+.lista-discografia .discografia-tab p {
+    margin: 0;
+    padding: 0;
+
+}
+
+.lista-discografia .discografia-tab:hover {
+    background-color: #494949;
+    transition: 0.1s ease-in;
+
+}
+
+.lista-discografia .discografia-tab img {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
 footer {
     background-color: black;
 
@@ -449,9 +541,21 @@ footer {
 
 }
 
+.footer-info ul li:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+
+}
+
 .footer-info ul li a {
     text-decoration: none;
     color: #7e7e7e;
+
+}
+
+.footer-info ul li a:hover {
+    color: #c7c5c5;
+    transition: 0.2s ease-in-out;
 
 }
 
